@@ -1,4 +1,3 @@
-
 body,
 h1,
 h2,
@@ -15,40 +14,52 @@ body {
 
 /* Header Styles */
 header {
-    background-color:rgb(232, 29, 29); 
-    color: #fff;
-    padding: 10px;
+  background-color: #e74c3c;
+  padding: 10px;
 }
 
+/* Navigation Styles */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Styling the logo image */
-nav img {
-    width: 40px;
-    height: 30px;
+/* Logo and Heading Styles */
+nav div {
+  display: flex;
+  align-items: center;
 }
 
-/* Styling the navigation links */
+nav div img {
+  width: 30px;
+}
+
+nav div h1 {
+  color: white;
+  margin-left: 10px;
+}
+
+/* Navigation Menu Styles */
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
 }
 
 nav ul li {
-    margin-right: 20px; 
+  margin-right: 50px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px; 
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
+/* Add hover effect if needed */
+nav ul li a:hover {
+  color: #f39c12;
+}
 /* Hero Section Styles */
 #hero {
     background-color:#fff;
