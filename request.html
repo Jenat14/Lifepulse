@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request Form</title>
+    <link rel="stylesheet" href="./styles/requeststyles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>
+          <img src="./resources/logoblood1.jpg" alt="Blood Donor Finder Logo">
+          <h1>LifePulse</h1>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+        <div>
+          <!-- Add login/register buttons or user information here -->
+        </div>
+      </nav>
+</header>
+
+<form>
+    <h1>Create a Blood Request</h1>
+  
+    <label for="patientName">Patient's Name:</label>
+    <input type="text" id="patientName" name="patientName" required>
+
+    <label for="patientAge">Patient's Age:</label>
+    <input type="text" id="patientAge" name="patientAge" required>
+
+    <label for="attenderName">Attender's Name:</label>
+    <input type="text" id="attenderName" name="attenderName" required>
+
+    <label for="contactNumber">Contact Number:</label>
+    <input type="tel" id="contactNumber" name="contactNumber" required>
+
+    <label for="bloodType">Blood Type:</label>
+    <select id="bloodType" name="bloodType" required>
+        <option value="" disabled="" selected="">Select blood type</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+    </select>
+
+    <label for="RequestType">Request Type:</label>
+    <select id="RequestType" name="RequestType" required>
+        <option value="" disabled="" selected="">Select request type</option>
+        <option value="Blood">Blood</option>
+        <option value="Platelets">Platelets</option>
+        <option value="Plasma">Plasma</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="9" required>
+
+    <label for="requiredDate">Required date:</label>
+    <input type="date" id="requestDate" name="requestDate" required
+       min="<?php echo date('Y-m-d'); ?>" oninput="validateDate()">
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="comments">Additional Comment:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <button type="submit">Submit Request</button>
+</form>
+
+</body>
+</html>

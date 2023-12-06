@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:  rgba(255, 255, 255, 0.185)  url('../resources/bgrregister.jpg') center/cover no-repeat;
+}
+
+header {
+    background-color: #e74c3c;
+    padding:0px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo and Heading Styles */
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav div img {
+    width: 30px;
+    padding:10px;
+  }
+  
+  nav div h1 {
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Navigation Menu Styles */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  nav ul li {
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration:none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: #441b00;
+  }
+form {
+    background: rgba(233, 81, 61, 0.9);
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+select {
+    background: white;
+    color: #333;
+}
+
+button {
+    background-color:rgb(255, 25, 0);
+    color:#ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 20;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color:#a30101;
+}
