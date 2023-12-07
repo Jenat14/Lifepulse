@@ -250,7 +250,6 @@ nav ul li a:hover {
 }
 
 
-
 /* Map Section Styles */
 
 #map {
@@ -347,6 +346,39 @@ nav ul li a:hover {
   text-align: center;
   background-color:#f4f4f4 ;
 }
+#contact {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #333;
+}
+#phone{
+  color: blue;
+}
+#mail{
+  color: brown;
+}
+#whatsapp{
+  color: green;
+}
+.contact-icons {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.contact-icons a {
+  color: #555;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  color: #007bff;
+}
+
 
 /* Footer Section Styles */
 footer {
