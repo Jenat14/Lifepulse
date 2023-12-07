@@ -16,6 +16,10 @@ body {
 header {
   background-color: #e74c3c;
   padding: 10px;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
 }
 
 /* Navigation Styles */
